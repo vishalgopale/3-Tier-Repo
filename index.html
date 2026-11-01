@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Three-Tier Architecture, explained with a restaurant</title>
+<meta name="description" content="An animated, step-by-step diagram that explains web, application and database tiers using Ravi's restaurant.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="side">
+    <header>
+      <h1>Ravi's restaurant</h1>
+      <p>A three-tier system, one step at a time.</p>
+    </header>
+    <nav id="steps" class="steps" aria-label="Steps"></nav>
+    <div class="ctrl">
+      <button id="play" type="button">Auto-play</button>
+      <button id="reset" type="button">Reset</button>
+    </div>
+    <section class="legend">
+      <h2>Moving objects</h2>
+      <ul id="legend"></ul>
+    </section>
+  </aside>
+  <main>
+    <div class="stage-wrap">
+      <div class="stage">
+        <svg id="diagram" viewBox="0 0 1100 620" role="img" aria-label="Animated three-tier architecture diagram"></svg>
+      </div>
+    </div>
+    <section class="caption" aria-live="polite">
+      <h2 id="cap-title"></h2>
+      <div class="parts">
+        <div><h3>In plain words</h3><p id="cap-plain"></p></div>
+        <div><h3>Technical name</h3><p id="cap-tech"></p></div>
+        <div><h3>Watch the picture</h3><p id="cap-watch"></p></div>
+      </div>
+    </section>
+  </main>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>
